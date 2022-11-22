@@ -251,12 +251,14 @@ a {
   .modal-wrap {
     width: 100%;
     min-height: 601px;
+    overflow: scroll;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal-wrap {
     width: 450px;
     min-height: 601px;
+    overflow: scroll;
   }
 }
 .modal-backdrop.is-hidden .modal-wrap {
