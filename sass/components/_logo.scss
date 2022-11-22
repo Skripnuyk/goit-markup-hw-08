@@ -1,0 +1,21 @@
+.logo {
+    color: var(--accent-color);
+        font-family: "Raleway";
+        font-weight: 700;
+        letter-spacing: 0.03em;
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+            font-size: 24px;
+            line-height: 1.16;
+    }
+    @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            line-height: 1.19;
+    }
+}
+
+.logo__span--color-light {
+    color: var(--primary-white-color);
+}
+.logo__span--color-dark {
+    color: var(--secondary-logo-color);
+}
