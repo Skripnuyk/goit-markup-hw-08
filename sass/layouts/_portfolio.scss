@@ -61,10 +61,10 @@
 
 .card-list {
         gap: 30px;
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 320px) and (max-width: 479px) {
             display: flex;
             flex-wrap: wrap;
-            width: 290px;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -96,7 +96,7 @@
     @media screen and (min-width: 320px) {
             display: flex;
             flex-wrap: wrap;
-            max-width: 450px;
+            width: 100%;
             
         }
     

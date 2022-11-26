@@ -573,11 +573,6 @@ a {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header__navigation {
-    margin-right: 96px;
-  }
-}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__logo {
@@ -943,16 +938,11 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 30px;
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .benefits-list {
-    width: 290px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
 }
 @media screen and (min-width: 480px) {
@@ -994,28 +984,21 @@ a {
 .benefits-item {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 270px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .benefits-item {
-    max-width: 290px;
+    width: 100%;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .benefits-item {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits-item {
     width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .benefits-item {
-    width: 270px;
   }
 }
 
@@ -1113,7 +1096,7 @@ a {
   .team__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 290px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1153,9 +1136,14 @@ a {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding-bottom: 30px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .team__item {
-    max-width: 450px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team__item {
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1231,13 +1219,6 @@ a {
   gap: 30px;
 }
 @media screen and (min-width: 320px) {
-  .clients-item {
-    width: calc((100% - 60px) / 1);
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 480px) {
   .clients-item {
     width: calc((100% - 60px) / 2);
     -ms-flex-wrap: wrap;
@@ -1377,14 +1358,14 @@ a {
 .card-list {
   gap: 30px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .card-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 290px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1436,7 +1417,7 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1572,9 +1553,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1736,7 +1716,6 @@ a {
 
 .subscription__input {
   width: 358px;
-  margin-right: 10px;
   height: 50px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1749,7 +1728,7 @@ a {
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .subscription__input {
-    width: 100%;
+    width: calc(100% - 30px);
     margin-bottom: 20px;
   }
 }
@@ -1763,6 +1742,11 @@ a {
   .subscription__input {
     width: 450px;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    margin-right: 10px;
   }
 }
 
